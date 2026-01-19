@@ -13,10 +13,44 @@ body {
     align-items: center;
 
     color: #42434d;
+
+    @media (min-width: 1281px) {
+        background-color: #fbf8f5;
+        background-image: url("../assets/desktop_bg.png");
+          background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+header{
+     @media (min-width: 1281px) {
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        height: 50px;
+        background-color: #f2725f;
+        box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
+        color: #ffffff;
+
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    &span{
+           color: #ffffff;
+        }
 }
 
 main {
     width: 85vw;
+        @media (min-width: 1281px) {
+        width: 50vw;
+        background-color: #fff;
+        box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
+
+        padding: 20px;
+        border-radius: 10px;
+    }
 }
 
 hr {
@@ -90,11 +124,12 @@ a {
 #converter {
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    width: 100%;
 }
 
 textarea {
     resize: none;
+    width: 100%;
 }
 
 /* Z.S.M STYLEGUIDE VARIABELEN VAN MAKEN NA TESTEN*/
@@ -129,14 +164,16 @@ input[type="submit"]:hover {
 }
 
 a:focus-visible,
-a:active{
+a:active {
     outline-offset: 1px;
     outline: 2px dashed #f38b46;
     background-color: #f05d47;
 }
 
 a:focus-visible,
-a:active, textarea:focus-visible, textarea:active {
+a:active,
+textarea:focus-visible,
+textarea:active {
     outline-offset: 1px;
     outline: 2px dashed #f38b46;
 }
