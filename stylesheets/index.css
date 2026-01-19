@@ -18,6 +18,7 @@ main {}
     flex-direction: column;
     align-items: center;
     font-size: 16px;
+    margin-bottom: 50px;
 }
 
 #steps {
@@ -25,6 +26,7 @@ main {}
     align-items: center;
     justify-content: space-between;
     width: 175px;
+    margin-bottom: 15px;
 }
 
 .circle {
@@ -62,4 +64,52 @@ main {}
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#converter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Z.S.M STYLEGUIDE VARIABELEN VAN MAKEN NA TESTEN*/
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+button,
+input[type="submit"] {
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+background: #f2725f;
+color: #fff;
+border: 0;
+padding: 8px 12px;
+white-space: nowrap;
+width: 100px;
+
+margin-right: 10px;
+margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #f05d47;
+}
+
+button.secondary {
+background: rgba(0,0,0,0);
+border: 1px solid;
+color: #f2725f;
+border-color: #f2725f;
+width: 100px;
+}
+
+button.secondary:hover {
+  color: #f05d47;
+  border-color: #f05d47;
+  font-weight: 400;
+  text-decoration: underline;
 }
