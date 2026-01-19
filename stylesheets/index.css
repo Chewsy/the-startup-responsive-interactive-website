@@ -30,6 +30,8 @@ header {
     @media (min-width: 1000px) {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 50vw;
         height: 50px;
         background-color: #f38b46;
@@ -47,6 +49,14 @@ header .price {
         font-size: 25px;
     }
 }
+
+#getPlusButton {
+    @media (min-width: 1000px) {
+        background-color: white;
+        color: #f38b46;
+    }
+}
+
 
 main {
     width: 85vw;
@@ -87,7 +97,7 @@ a {
     margin-bottom: 50px;
 }
 
-#intro p{
+#intro p {
     width: 70%;
     text-align: center;
 }
