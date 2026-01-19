@@ -1,5 +1,5 @@
 body {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     padding-top: 40px;
     background-color: #fbf8f5;
@@ -10,7 +10,8 @@ body {
     align-items: center;
 }
 
-main {}
+main {
+}
 
 #intro {
     width: 100%;
@@ -20,6 +21,8 @@ main {}
     font-size: 16px;
     margin-bottom: 50px;
 }
+
+/* STAPPEN VISUAL */
 
 #steps {
     display: flex;
@@ -66,10 +69,16 @@ main {}
     align-items: center;
 }
 
+/* CONVERTER */
+
 #converter{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80vw;
+}
+
+textarea {
+  resize: none;
 }
 
 /* Z.S.M STYLEGUIDE VARIABELEN VAN MAKEN NA TESTEN*/
