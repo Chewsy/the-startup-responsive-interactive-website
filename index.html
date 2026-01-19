@@ -13,7 +13,7 @@
 <body>
     <main>
         <section id="intro">
-            <img src="assets/logo.png">
+            <img src="assets/logo.png" alt="SoundSlice logo">
 
             <h1>Convert ASCII into tabsheet</h1>
             <p>Turn sheet music into an interactive learning environment. Perfect for practicing, teaching, sharing,
@@ -21,7 +21,7 @@
         </section>
 
         <div id="steps">
-            <div class="isActive" class="circle">
+            <div id="isActive" class="circle">
                 <span>1</span>
             </div>
             <div class="line"></div>
@@ -41,10 +41,7 @@
                 Paste ASCII tabs here
             </textarea>
 
-            <div class="buttons">
-                <a href="#result"><button type="button">Convert</button></a>
-                <button type="button" class="secondary">Reset</button>
-            </div>
+                <a href="#result">Convert</a>
         </section>
 
         <hr>
@@ -53,11 +50,11 @@
             <iframe src="https://www.soundslice.com/slices/1n1Vc/embed-mini/" width="100%" height="250" frameborder="0"
                 allowfullscreen=""></iframe>
 
-            <a href="#getPro"><button type="button">
+            <a href="#getPro">
                     <span class="material-symbols-outlined">
                         bookmark_add
                     </span>
-                    Save to library</button>
+                    Save to library
             </a>
         </section>
 
@@ -70,11 +67,11 @@
             <div class="marketing">
                 <span class="price">$5</span>
 
-                <a href="https://www.soundslice.com/settings/change-plan/checkout/3/"><button type="button">
+                <a href="https://www.soundslice.com/settings/change-plan/checkout/3/" id="getPlusButton">
                         <span class="material-symbols-outlined">
                             star_shine
                         </span>
-                        Get Plus</button>
+                        Get Plus
                 </a>
 
             </div>

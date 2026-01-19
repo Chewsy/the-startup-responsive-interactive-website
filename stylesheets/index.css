@@ -3,7 +3,7 @@ body {
     width: 100vw;
     height: 100vh;
     padding-top: 40px;
-    background-color: #fbf8f5;
+    background-color: #ffffff;
     background-image: url("../assets/mobile_bg.png");
     background-repeat: no-repeat;
     /* verander naar variabele accent */
@@ -71,7 +71,7 @@ a {
 
 }
 
-.isActive {
+#isActive {
     height: 30px;
     width: 30px;
     background-color: #f38b46;
@@ -104,8 +104,7 @@ textarea {
     flex-direction: row;
 }
 
-button,
-input[type="submit"] {
+a {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
@@ -124,29 +123,14 @@ input[type="submit"] {
     justify-content: center;
 }
 
-button:hover,
+a:hover,
 input[type="submit"]:hover {
     background: #f05d47;
 }
 
-button.secondary {
-    background: rgba(0, 0, 0, 0);
-    border: 1px solid;
-    color: #f2725f;
-    border-color: #f2725f;
-    width: 100px;
-}
-
-button.secondary:hover {
-    color: #f05d47;
-    border-color: #f05d47;
-    font-weight: 400;
-    text-decoration: underline;
-}
-
 /* RESULT */
 
-#result button {
+#result a {
     width: 150px;
 }
 
@@ -162,7 +146,6 @@ button.secondary:hover {
 #getPlus {
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 200px;
 }
 
