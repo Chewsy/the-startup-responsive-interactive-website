@@ -1,0 +1,201 @@
+/* Generieke stijlen voor jullie styleguide
+   Waarschijnlijk hoef je hier niet zoveel voor aan te passen, maar dat mag natuurlijk wel */
+
+/* We gebruiken hier Cascade layers, wat mogelijke problemen met Specificiteit voorkomt
+   https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
+   https://css-tricks.com/css-cascade-layers/ */
+
+@layer generiek {
+
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    max-width: 40em;
+    margin: auto;
+    background: #fff;
+  }
+
+  nav:not([class]),
+  h1:not([class]),
+  h2:not([class]),
+  p:not([class]),
+  figcaption:not([class]) {
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+
+  p:not([class])>code:not([class]) {
+    display: block;
+  }
+
+  fieldset:not([class]) {
+    margin-block: 1em;
+  }
+
+  nav:not([class])>a {
+    padding: .5em;
+    border: 1px solid;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  figure:not([class]) {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    >code {
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      background: #ccc;
+    }
+  }
+
+}
+
+/* CSS STYLING OP HTML(!) */
+
+body {
+  color: #42434d;
+  font-family: var(--font-family);
+  padding: var(--padding);
+}
+
+hr {
+  border: var(--border-radius-smallest) solid var(--accent);
+}
+
+/* Kleuren */
+
+#kleur figure:nth-of-type(1) code {
+  background: #fff;
+  color: #42434d;
+  border: 1px solid black;
+}
+
+#kleur figure:nth-of-type(2) code {
+  background: #232429;
+  color: #ffffff;
+}
+
+#kleur figure:nth-of-type(3) code {
+  background: #42434d;
+  border: var(--border);
+  color: #ffffff;
+}
+
+#kleur figure:nth-of-type(4) code {
+  background: #fbf8f5;
+  color: var(--background-dark);
+  border: 1px solid black;
+}
+
+#kleur figure:nth-of-type(5) code {
+  background: #ea684a;
+  color: var(--background-dark);
+}
+
+#kleur figure:nth-of-type(6) code {
+  background: #f38b46;
+  color: var(--background-dark);
+}
+
+/* Typografie */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent);
+}
+
+.headline h1 {
+  font-size: var(--headline);
+}
+
+.head h2 {
+  font-size: var(--head);
+}
+
+#typografie h3 {
+  font-size: var(--subhead);
+}
+
+#typografie h4,
+#typografie h5,
+.label h6 {
+  font-size: var(--label);
+}
+
+/* Formulier elementen */
+
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+textarea {
+color: inherit;
+background-color: #fff;
+border: 1px solid #d9dadb;
+border-radius: 5px;
+padding: 2.2rem .75rem .75rem;
+width: 100%;
+}
+
+/* input::placeholder,
+textarea::placeholder {
+  color: pink;
+} */
+
+input:focus,
+textarea:focus {
+border: #a1a0a6;
+}
+
+button,
+input[type="submit"] {
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+background: #f2725f;
+color: #fff;
+border: 0;
+padding: 8px 12px;
+white-space: nowrap;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #f05d47;
+}
+
+button.secondary {
+background: rgba(0,0,0,0);
+border: 1px solid;
+color: #f2725f;
+border-color: #f2725f;
+}
+
+button.secondary:hover {
+  color: #f05d47;
+  border-color: #f05d47;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+a {
+color: #f38b46;
+text-decoration: none;
+}
