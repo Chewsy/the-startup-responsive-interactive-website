@@ -8,9 +8,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: #42434d;
 }
 
 main {
+}
+
+hr{
+  border: 0.5px solid #f38b46;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #intro {
@@ -121,4 +129,10 @@ button.secondary:hover {
   border-color: #f05d47;
   font-weight: 400;
   text-decoration: underline;
+}
+
+/* RESULT */
+
+#result button{
+    width: 150px;
 }
