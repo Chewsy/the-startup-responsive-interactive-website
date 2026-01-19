@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundSlice</title>
     <link rel="stylesheet" href="stylesheets/index.css">
+    <!-- Bij meer google font icons, zet comma achter stylesheet link + icon name -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=bookmark_add" />
-</head>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=bookmark_add,star_shine" />
 
 <body>
     <main>
@@ -54,17 +54,39 @@
                 allowfullscreen=""></iframe>
 
             <a href="#getPro"><button type="button">
-                <span class="material-symbols-outlined">
-                    bookmark_add
-                </span>
-                Save to library</button>
-                </a>
+                    <span class="material-symbols-outlined">
+                        bookmark_add
+                    </span>
+                    Save to library</button>
+            </a>
         </section>
 
         <hr>
 
-        <section id="getPro">
+        <!-- TODO layout section optimaliseren -->
+        <h2>Want more perks?</h2>
+        <section id="getPlus">
 
+            <div class="marketing">
+                <span class="price">$5</span>
+
+                <a href="https://www.soundslice.com/settings/change-plan/checkout/3/"><button type="button">
+                        <span class="material-symbols-outlined">
+                            star_shine
+                        </span>
+                        Get Plus</button>
+                </a>
+
+            </div>
+            <div class="marketing">
+                <ul>
+                    <li>Sync with uploaded MP3s/video</li>
+                    <li>Print/export slices you’ve created</li>
+                    <li>Share slices via secret link</li>
+                    <li>Scan music from PDFs and images</li>
+                    <li>Auto-save player settings</li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
