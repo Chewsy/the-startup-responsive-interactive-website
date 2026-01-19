@@ -87,6 +87,11 @@ a {
     margin-bottom: 50px;
 }
 
+#intro p{
+    width: 70%;
+    text-align: center;
+}
+
 /* STAPPEN VISUAL */
 
 #steps {
