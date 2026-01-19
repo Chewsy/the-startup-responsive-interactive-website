@@ -3,7 +3,6 @@
 body {
     margin: 0;
     width: 100vw;
-    height: 100vh;
     padding-top: 40px;
     background-color: #ffffff;
     background-image: url("../assets/mobile_bg.png");
@@ -71,6 +70,7 @@ main {
 
         padding: 20px;
         border-radius: 10px;
+        margin-bottom: 20px;
     }
 }
 
