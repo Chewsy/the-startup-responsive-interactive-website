@@ -128,6 +128,19 @@ input[type="submit"]:hover {
     background: #f05d47;
 }
 
+a:focus-visible,
+a:active{
+    outline-offset: 1px;
+    outline: 2px dashed #f38b46;
+    background-color: #f05d47;
+}
+
+a:focus-visible,
+a:active, textarea:focus-visible, textarea:active {
+    outline-offset: 1px;
+    outline: 2px dashed #f38b46;
+}
+
 /* RESULT */
 
 #result a {
