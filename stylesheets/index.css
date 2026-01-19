@@ -6,6 +6,8 @@ body {
     background-color: #ffffff;
     background-image: url("../assets/mobile_bg.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     /* verander naar variabele accent */
 
     display: flex;
@@ -14,21 +16,23 @@ body {
 
     color: #42434d;
 
-    @media (min-width: 1281px) {
+    @media (min-width: 1000px) {
         background-color: #fbf8f5;
         background-image: url("../assets/desktop_bg.png");
-          background-attachment: fixed;
         background-size: cover;
+        background-attachment: fixed;
     }
 }
 
-header{
-     @media (min-width: 1281px) {
+header {
+    display: none;
+
+    @media (min-width: 1000px) {
         display: flex;
         flex-direction: row;
         width: 50vw;
         height: 50px;
-        background-color: #f2725f;
+        background-color: #f38b46;
         box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
         color: #ffffff;
 
@@ -36,14 +40,18 @@ header{
         padding: 20px;
         border-radius: 5px;
     }
-    &span{
-           color: #ffffff;
-        }
+}
+
+header .price {
+    @media (min-width: 1000px) {
+        font-size: 25px;
+    }
 }
 
 main {
     width: 85vw;
-        @media (min-width: 1281px) {
+
+    @media (min-width: 1000px) {
         width: 50vw;
         background-color: #fff;
         box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
@@ -54,9 +62,16 @@ main {
 }
 
 hr {
-    border: 0.5px solid #f38b46;
+    border: 0;
+    border-top: 0.5px solid #f38b46;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+hr.getPlus {
+    @media (min-width: 1000px) {
+        display: none;
+    }
 }
 
 a {
@@ -156,6 +171,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    header a {
+        @media (min-width: 1000px) {
+            font-size: 25px;
+            text-decoration: dotted;
+            background-color: #ffffff;
+        }
+    }
 }
 
 a:hover,
@@ -193,10 +216,19 @@ textarea:active {
 }
 
 /* GET PLUS */
-#getPlus {
+.getPlus {
     display: flex;
     flex-direction: row;
-    height: 200px;
+
+    @media (min-width: 1000px) {
+        display: none;
+    }
+}
+
+h2 {
+    @media (min-width: 1000px) {
+        display: none;
+    }
 }
 
 .marketing {
@@ -208,6 +240,11 @@ textarea:active {
     color: #f2725f;
     font-size: 100px;
     font-weight: 800;
+
+    @media (min-width: 1000px) {
+        color: #ffffff;
+        font-size: 50px;
+    }
 }
 
 ul {
