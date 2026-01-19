@@ -109,6 +109,10 @@ width: 100px;
 
 margin-right: 10px;
 margin-top: 10px;
+
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 button:hover,
@@ -135,4 +139,12 @@ button.secondary:hover {
 
 #result button{
     width: 150px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
