@@ -35,7 +35,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 50vw;
-        height: 50px;
+        height: auto;
         background-color: #f38b46;
         box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
         color: #ffffff;
@@ -57,6 +57,12 @@ header .price {
         background-color: white;
         color: #f38b46;
     }
+}
+
+.marketingBanner ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
 }
 
 
@@ -81,7 +87,7 @@ hr {
     margin-bottom: 20px;
 }
 
-hr.getPlus {
+hr .getPlus {
     @media (min-width: 1000px) {
         display: none;
     }
@@ -98,11 +104,15 @@ a {
     align-items: center;
     font-size: 16px;
     margin-bottom: 50px;
-}
 
-#intro p {
+    &p{
     width: 70%;
     text-align: center;
+    }
+
+    &a{
+        background-color: pink;
+    }
 }
 
 /* STAPPEN VISUAL */
@@ -284,4 +294,11 @@ ul li {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px 20px;
+
+        @media (min-width: 1000px) {
+        color: #ffffff;
+        background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+
+    }
+
 }
