@@ -44,33 +44,12 @@
                 transcribing and more.</p>
         </section>
 
-        <div id="steps">
-            <div id="isActive" class="circle">
-                <span>1</span>
-            </div>
-            <div class="line"></div>
-            <div class="circle">
-                <span>2</span>
-            </div>
-            <div class="line"></div>
-            <div class="circle">
-                <span>3</span>
-            </div>
-        </div>
-
         <section id="converter">
             <label for="ascii"></label>
 
-            <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33">
-e|--17------17-------17------17------17-----17------22----22--22--22---------|
-B|------15------15---------------15------15----------------------------------|
-G|---------------------------------------------------------------------------|
-D|---------------------------------------------------------------------------|
-A|---------------------------------------------------------------------------|
-E|---------------------------------------------------------------------------|
-            </textarea>
+            <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33"></textarea>
 
-            <a href="#result">Convert</a>
+            <a href="#result" id="convertButton">Convert</a>
         </section>
 
         <hr>
@@ -79,7 +58,7 @@ E|---------------------------------------------------------------------------|
             <iframe src="https://www.soundslice.com/slices/C29bc/embed/" width="100%" height="250" frameBorder="0"
                 allowfullscreen></iframe>
 
-            <a href="#getPro">
+            <a href="#getPro" id="addToLibrary">
                 <span class="material-symbols-outlined">
                     bookmark_add
                 </span>

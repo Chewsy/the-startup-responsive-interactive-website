@@ -2,8 +2,8 @@
 
 body {
     margin: 0;
-    width: 100vw;
     padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #ffffff;
     background-image: url("../assets/mobile_bg.png");
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ header .price {
     }
 }
 
-.marketingBanner ul{
+.marketingBanner ul {
     display: flex;
     flex-direction: row;
     font-size: 10px;
@@ -76,7 +76,6 @@ main {
 
         padding: 20px;
         border-radius: 10px;
-        margin-bottom: 20px;
     }
 }
 
@@ -105,61 +104,14 @@ a {
     font-size: 16px;
     margin-bottom: 50px;
 
-    &p{
-    width: 70%;
-    text-align: center;
+    &p {
+        width: 70%;
+        text-align: center;
     }
 
-    &a{
+    &a {
         background-color: pink;
     }
-}
-
-/* STAPPEN VISUAL */
-
-#steps {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 175px;
-    margin-bottom: 15px;
-}
-
-.circle {
-    height: 30px;
-    width: 30px;
-    background-color: #f38b46;
-    /* verander naar variabele links*/
-    border-radius: 50%;
-    opacity: 0.5;
-
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.line {
-    width: 30px;
-    height: 3px;
-    background-color: #f38b46;
-    /* verander naar variabele links*/
-    border-radius: 3px;
-
-}
-
-#isActive {
-    height: 30px;
-    width: 30px;
-    background-color: #f38b46;
-    /* verander naar variabele links*/
-    border-radius: 50%;
-    opacity: 1;
-
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* CONVERTER */
@@ -180,8 +132,20 @@ textarea {
 
     &::placeholder {
         color: #42434d;
+        font-style: italic;
+    }
+
+    &:placeholder-shown {
+        /* background-color: gold; */
+        border-radius: 5px;
     }
 }
+
+iframe{
+    opacity: 0;
+}
+
+   
 
 /* Z.S.M STYLEGUIDE VARIABELEN VAN MAKEN NA TESTEN*/
 
@@ -194,7 +158,7 @@ a {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    background: #f2725f;
+    background: #42434d;
     color: #fff;
     border: 0;
     padding: 8px 12px;
@@ -215,18 +179,42 @@ a {
             background-color: #ffffff;
         }
     }
+
+    #converter:has(textarea:not(:placeholder-shown)) & {
+        background-color: #f2725f;
+
+        animation-name:schudden ;
+        animation-duration: .1s;
+        animation-iteration-count:6;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+
 }
+
+@keyframes schudden {
+    0% {
+        rotate:-2deg;
+    }
+    100% {
+        rotate:2deg;
+    }
+}
+
+
+   
+    
 
 a:hover,
 input[type="submit"]:hover {
-    background: #f05d47;
+    background: #50515d;
 }
 
 a:focus-visible,
 a:active {
     outline-offset: 1px;
     outline: 2px dashed #f38b46;
-    background-color: #f05d47;
+    background-color: #50515d;
 }
 
 a:focus-visible,
@@ -240,6 +228,7 @@ textarea:active {
 /* RESULT */
 
 #result a {
+    background-color: #42434d;
     width: 150px;
 }
 
@@ -295,7 +284,7 @@ ul li {
     background-position: left center;
     background-size: 20px 20px;
 
-        @media (min-width: 1000px) {
+    @media (min-width: 1000px) {
         color: #ffffff;
         background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 
