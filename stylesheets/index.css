@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    padding-top: var(--whitespace-large); 
+    padding-top: var(--whitespace-large);
     padding-bottom: var(--whitespace-large);
     background-color: var(--white-color);
     background-image: url("../assets/mobile_bg.png");
@@ -96,6 +96,10 @@ a {
     text-decoration: none;
 }
 
+details:hover {
+    cursor: pointer;
+}
+
 #intro {
     width: 100%;
     display: flex;
@@ -110,7 +114,7 @@ a {
     }
 }
 
-#logo{
+#logo {
     margin-bottom: 50px;
 }
 
