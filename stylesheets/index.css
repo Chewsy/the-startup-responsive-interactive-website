@@ -111,7 +111,7 @@ a {
     }
 }
 
-#intro img {
+#logo{
     margin-bottom: 50px;
 }
 
@@ -260,6 +260,7 @@ textarea:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .vouch {
