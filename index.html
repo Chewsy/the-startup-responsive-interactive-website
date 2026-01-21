@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundSlice</title>
     <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="styleguide/styleguide.css">
     <!-- Bij meer google font icons, zet comma achter stylesheet link + icon name -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=bookmark_add,star_shine" />
@@ -48,11 +49,11 @@
 
         <section id="converter">
             <form action="submit" method="get">
-            <label for="ascii"></label>
+                <label for="ascii"></label>
 
-            <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33"></textarea>
+                <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33" required></textarea>
 
-            <button onclick="preventDefault()" id="convertButton">Convert</button>
+                <button id="convertButton">Convert</button>
             </form>
         </section>
 

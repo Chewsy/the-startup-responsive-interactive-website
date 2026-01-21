@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     background-image: url("../assets/mobile_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@ body {
     align-items: center;
 
     font-family: "Zalando Sans", sans-serif;
-    color: #42434d;
+    color: var(--text-disabled-button);
 
     @media (min-width: 1000px) {
         background-color: #fbf8f5;
@@ -36,9 +36,9 @@ header {
         align-items: center;
         width: 50vw;
         height: auto;
-        background-color: #f38b46;
+        background-color: var(--primary-color);
         box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
-        color: #ffffff;
+        color: var(--white-color);
 
         margin-bottom: 20px;
         padding: 20px;
@@ -55,7 +55,7 @@ header .price {
 .getPlusButton {
     @media (min-width: 1000px) {
         background-color: white;
-        color: #f38b46;
+        color: var(--primary-color);
     }
 }
 
@@ -81,7 +81,7 @@ main {
 
 hr {
     border: 0;
-    border-top: 0.5px solid #f38b46;
+    border-top: 0.5px solid var(--primary-color);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -125,18 +125,17 @@ a {
 textarea {
     resize: none;
     width: 100%;
-    background-color: #fbf8f5;
-    color: #f38b46;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     border: 1px solid #d9dadb;
     border-radius: 5px;
 
     &::placeholder {
-        color: #42434d;
+        color: var(--text-disabled-button);
         font-style: italic;
     }
 
     &:placeholder-shown {
-        /* background-color: gold; */
         border-radius: 5px;
     }
 }
@@ -158,7 +157,7 @@ button {
       border-radius: 4px;
     outline: none;
     cursor: pointer;
-    background: #42434d;
+    background: var(--text-disabled-button);
     color: #fff;
     border: 0;
     padding: 8px 12px;
@@ -177,8 +176,8 @@ button {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    background: #f2725f;
-    color: #fff;
+    background: var(--text-disabled-button);
+    color: var(--white-color);
     border: 0;
     padding: 8px 12px;
     white-space: nowrap;
@@ -195,14 +194,13 @@ button {
         @media (min-width: 1000px) {
             font-size: 25px;
             text-decoration: dotted;
-            background-color: #ffffff;
+            background-color: var(--white-color);
         }
     }
-
 }
 
 #converter:has(textarea:not(:placeholder-shown)) button {
-    background-color: #f2725f;
+    background-color: var(--button-color);
 
     animation-name: schudden;
     animation-duration: .1s;
@@ -212,7 +210,7 @@ button {
 }
 
 #result:has(button.active) button {
-    background-color: #f2725f;
+    background-color: var(--button-color);
 
     animation-name: schudden;
     animation-duration: .1s;
@@ -223,7 +221,7 @@ button {
 
 
 main:has(#result a.active) #converter button {
-    background-color: #42434d;
+    background-color: var(--text-disabled-button);
 }
 
 @keyframes schudden {
@@ -245,7 +243,7 @@ input[type="submit"]:hover {
 button:focus-visible,
 button:active {
     outline-offset: 1px;
-    outline: 2px dashed #f38b46;
+    outline: 2px dashed var(--primary-color);
     background-color: #50515d;
 }
 
@@ -254,17 +252,17 @@ button:active,
 textarea:focus-visible,
 textarea:active {
     outline-offset: 1px;
-    outline: 2px dashed #f38b46;
+    outline: 2px dashed var(--primary-color);
 }
 
 /* RESULT */
 
 #result button {
-    background-color: #42434d;
+    background-color: var(--text-disabled-button);
     width: 150px;
 
     &.active {
-        background-color: #f2725f;
+        background-color: var(--button-color);
     }
 }
 
@@ -298,12 +296,12 @@ h2 {
 }
 
 .price {
-    color: #f2725f;
+    color: var(--button-color);
     font-size: 100px;
     font-weight: 800;
 
     @media (min-width: 1000px) {
-        color: #ffffff;
+        color: var(--white-color);
         font-size: 50px;
     }
 }
@@ -321,7 +319,7 @@ ul li {
     background-size: 20px 20px;
 
     @media (min-width: 1000px) {
-        color: #ffffff;
+        color: var(--white-color);
         background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 
     }
