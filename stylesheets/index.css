@@ -2,24 +2,23 @@
 
 body {
     margin: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: var(--whitespace-large); 
+    padding-bottom: var(--whitespace-large);
     background-color: var(--white-color);
     background-image: url("../assets/mobile_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* verander naar variabele accent */
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     font-family: "Zalando Sans", sans-serif;
-    color: var(--text-disabled-button);
+    color: var(--text-color);
 
     @media (min-width: 1000px) {
-        background-color: #fbf8f5;
+        background-color: var(--accent-color);
         background-image: url("../assets/desktop_bg.png");
         background-size: cover;
         background-attachment: fixed;
@@ -37,12 +36,12 @@ header {
         width: 50vw;
         height: auto;
         background-color: var(--primary-color);
-        box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
+        box-shadow: var(--boxshadow);
         color: var(--white-color);
 
-        margin-bottom: 20px;
-        padding: 20px;
-        border-radius: 5px;
+        margin-bottom: var(--whitespace);
+        padding: var(--whitespace);
+        border-radius: var(--radius);
     }
 }
 
@@ -54,7 +53,7 @@ header .price {
 
 .getPlusButton {
     @media (min-width: 1000px) {
-        background-color: white;
+        background-color: var(--white-color);
         color: var(--primary-color);
     }
 }
@@ -72,10 +71,10 @@ main {
 
     @media (min-width: 1000px) {
         width: 50vw;
-        background-color: #fff;
-        box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186);
+        background-color: var(--white-color);
+        box-shadow: var(--boxshadow);
 
-        padding: 20px;
+        padding: var(--whitespace);
         border-radius: 10px;
     }
 }
@@ -83,8 +82,8 @@ main {
 hr {
     border: 0;
     border-top: 0.5px solid var(--primary-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--whitespace);
+    margin-bottom: var(--whitespace);
 }
 
 hr .getPlus {
@@ -103,7 +102,7 @@ a {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: var(--whitespace);
 
     &p {
         width: 70%;
@@ -129,15 +128,15 @@ textarea {
     background-color: var(--accent-color);
     color: var(--primary-color);
     border: 1px solid #d9dadb;
-    border-radius: 5px;
+    border-radius: var(--radius);
 
     &::placeholder {
-        color: var(--text-disabled-button);
+        color: var(--text-color);
         font-style: italic;
     }
 
     &:placeholder-shown {
-        border-radius: 5px;
+        border-radius: var(--radius);
     }
 }
 
@@ -149,19 +148,19 @@ textarea {
 }
 
 button {
-    border-radius: 4px;
+    border-radius: var(--radius);
     outline: none;
     cursor: pointer;
-    background: var(--text-disabled-button);
-    color: #fff;
+    background: var(--text-color);
+    color: var(--white-color);
     border: 0;
     padding: 8px 12px;
     white-space: nowrap;
     width: 100px;
     min-height: 40px;
 
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: var(--whitespace-small);
+    margin-top: var(--whitespace-small);
 
     display: flex;
     align-items: center;
@@ -169,18 +168,18 @@ button {
 }
 
 button {
-    border-radius: 4px;
+    border-radius: var(--radius);
     outline: none;
     cursor: pointer;
-    background: var(--text-disabled-button);
+    background: var(--text-color);
     color: var(--white-color);
     border: 0;
     padding: 8px 12px;
     white-space: nowrap;
     width: 100px;
 
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: var(--whitespace-small);
+    margin-top: var(--whitespace-small);
 
     display: flex;
     align-items: center;
@@ -218,7 +217,7 @@ button {
 
 
 main:has(#result a.active) #converter button {
-    background-color: var(--text-disabled-button);
+    background-color: var(--text-color);
 }
 
 @keyframes schudden {
@@ -235,7 +234,6 @@ button:focus-visible,
 button:active {
     outline-offset: 1px;
     outline: 2px dashed var(--primary-color);
-    background-color: #50515d;
 }
 
 button:focus-visible,
@@ -251,7 +249,7 @@ textarea:active {
 }
 
 #vouches {
-    margin-top: 10px;
+    margin-top: var(--whitespace-small);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -261,14 +259,13 @@ textarea:active {
 .vouch {
     width: 46%;
     height: auto;
-    padding: 10px;
+    padding: var(--whitespace-small);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: var(--accent-color);
-    /* box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186); */
-    border-radius: 5px;
+    border-radius: var(--radius);
     border: 1px solid #d9dadb;
     font-size: small;
     background-image: url("../assets/blob.png");
@@ -294,7 +291,7 @@ blockquote {
 }
 
 #result button {
-    background-color: var(--text-disabled-button);
+    background-color: var(--text-color);
     width: 150px;
 
     &.active {
