@@ -42,63 +42,88 @@
         <section id="intro">
             <img src="assets/logo.png" alt="SoundSlice logo">
 
-            <h1>Convert ASCII into tabsheet</h1>
-            <p>Turn sheet music into an interactive learning environment. Perfect for practicing, teaching, sharing,
-                transcribing and more.</p>
+            <section id="seo">
+                <h1>People use Soundslice to practice, teach, sell, embed and more…</h1>
+                <p>Learning music is complicated, and we musicians are used to juggling multiple tools to deal with
+                    that. Sheet music, MP3 players, YouTube videos, slowdown/looping apps, notation/tab editing
+                    software. Why isn’t there a single tool that combines everything a musician needs?
+
+                    We were frustrated by that — so we created Soundslice.</p>
+                <div id="vouches">
+                    <div class="vouch">
+                        <blockquote>“I use Soundslice every day, every class. It is the <b>single most valuable tool in
+                                my
+                                teaching toolbox</b>, especially for distance learning!”</blockquote>
+                        <img src="assets/brad-wendkos-8789d0845917a4c92a4bc6fd05ee57cb.jpg">
+                    </div>
+                    <div class="vouch">
+                        <blockquote>“Soundslice is the <b>best web-based transcription tool</b> I've found. Good,
+                            cross-platform transcription software is frustratingly rare.”</blockquote>
+                        <img src="assets/large1.png">
+                    </div>
+                </div>
+            </section>
         </section>
+
+        <hr>
+
+        <h2>Convert ASCII into tabsheet</h2>
+        <p>Turn sheet music into an interactive learning environment. Perfect for practicing, teaching, sharing,
+            transcribing and more.</p>
+        </section>
+
 
         <section id="converter">
             <form action="submit" method="get">
                 <label for="ascii"></label>
 
-                <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33" required></textarea>
+                <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33"
+                    required></textarea>
 
                 <button id="convertButton">Convert</button>
             </form>
-        </section>
 
+            <section id="result">
 
-        <section id="result">
+                <hr>
 
-                    <hr>
+                <iframe src="https://www.soundslice.com/slices/C29bc/embed/" width="100%" height="250" frameBorder="0"
+                    allowfullscreen></iframe>
 
-            <iframe src="https://www.soundslice.com/slices/C29bc/embed/" width="100%" height="250" frameBorder="0"
-                allowfullscreen></iframe>
-
-            <button id="addToLibrary">
-                <span class="material-symbols-outlined">
-                    bookmark_add
-                </span>
-                Save to library
-            </button>
-        </section>
-
-        <hr class="getPlus">
-
-        <h2>Want more perks?</h2>
-        <section class="getPlus">
-
-            <div class="marketing">
-                <span class="price">$5</span>
-
-                <button class="getPlusButton">
+                <button id="addToLibrary">
                     <span class="material-symbols-outlined">
-                        star_shine
+                        bookmark_add
                     </span>
-                    Get Plus
+                    Save to library
                 </button>
+            </section>
 
-            </div>
-            <div class="marketing">
-                <ul>
-                    <li>Sync with uploaded MP3s/video</li>
-                    <li>Print/export slices you’ve created</li>
-                    <li>Share slices via secret link</li>
-                    <li>Scan music from PDFs and images</li>
-                    <li>Auto-save player settings</li>
-                </ul>
-            </div>
-        </section>
+            <hr class="getPlus">
+
+            <h3>Want more perks?</h3>
+            <section class="getPlus">
+
+                <div class="marketing">
+                    <span class="price">$5</span>
+
+                    <button class="getPlusButton">
+                        <span class="material-symbols-outlined">
+                            star_shine
+                        </span>
+                        Get Plus
+                    </button>
+
+                </div>
+                <div class="marketing">
+                    <ul>
+                        <li>Sync with uploaded MP3s/video</li>
+                        <li>Print/export slices you’ve created</li>
+                        <li>Share slices via secret link</li>
+                        <li>Scan music from PDFs and images</li>
+                        <li>Auto-save player settings</li>
+                    </ul>
+                </div>
+            </section>
     </main>
 </body>
 <script type="text/javascript" src="scripts/index.js"></script>

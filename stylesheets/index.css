@@ -68,6 +68,7 @@ header .price {
 
 main {
     width: 85vw;
+    height: auto;
 
     @media (min-width: 1000px) {
         width: 50vw;
@@ -102,16 +103,16 @@ a {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     &p {
         width: 70%;
         text-align: center;
     }
+}
 
-    &a {
-        background-color: pink;
-    }
+#intro img {
+    margin-bottom: 50px;
 }
 
 /* CONVERTER */
@@ -148,7 +149,7 @@ textarea {
 }
 
 button {
-      border-radius: 4px;
+    border-radius: 4px;
     outline: none;
     cursor: pointer;
     background: var(--text-disabled-button);
@@ -250,9 +251,49 @@ textarea:active {
     outline: 2px dashed var(--primary-color);
 }
 
+#seo {
+    margin-bottom: 20px;
+}
+
+#vouches {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vouch {
+    width: 46%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    /* box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.186); */
+    border-radius: 5px;
+    border: 1px solid #d9dadb;
+    font-size: small;
+    background-image: url("../assets/blob.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 110%;
+}
+
+.vouch img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+blockquote {
+    margin: 0;
+}
+
 /* RESULT */
 
-#result{
+#result {
     display: none;
 }
 
@@ -283,7 +324,7 @@ textarea:active {
     }
 }
 
-h2 {
+h3 {
     @media (min-width: 1000px) {
         display: none;
     }
