@@ -154,11 +154,30 @@ iframe {
     flex-direction: row;
 }
 
-a {
-    border-radius: 4px;
+button {
+      border-radius: 4px;
     outline: none;
     cursor: pointer;
     background: #42434d;
+    color: #fff;
+    border: 0;
+    padding: 8px 12px;
+    white-space: nowrap;
+    width: 100px;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: #f2725f;
     color: #fff;
     border: 0;
     padding: 8px 12px;
@@ -182,7 +201,7 @@ a {
 
 }
 
-#converter:has(textarea:not(:placeholder-shown)) a {
+#converter:has(textarea:not(:placeholder-shown)) button {
     background-color: #f2725f;
 
     animation-name: schudden;
@@ -192,7 +211,7 @@ a {
     animation-direction: alternate;
 }
 
-#result:has(a.active) a {
+#result:has(button.active) button {
     background-color: #f2725f;
 
     animation-name: schudden;
@@ -203,7 +222,7 @@ a {
 }
 
 
-main:has(#result a.active) #converter a {
+main:has(#result a.active) #converter button {
     background-color: #42434d;
 }
 
@@ -218,20 +237,20 @@ main:has(#result a.active) #converter a {
 }
 
 
-a:hover,
+button:hover,
 input[type="submit"]:hover {
     background: #50515d;
 }
 
-a:focus-visible,
-a:active {
+button:focus-visible,
+button:active {
     outline-offset: 1px;
     outline: 2px dashed #f38b46;
     background-color: #50515d;
 }
 
-a:focus-visible,
-a:active,
+button:focus-visible,
+button:active,
 textarea:focus-visible,
 textarea:active {
     outline-offset: 1px;
@@ -240,7 +259,7 @@ textarea:active {
 
 /* RESULT */
 
-#result a {
+#result button {
     background-color: #42434d;
     width: 150px;
 

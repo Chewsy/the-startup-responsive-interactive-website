@@ -30,12 +30,12 @@
                 </div>
             </details>
         </div>
-        <a href="https://www.soundslice.com/settings/change-plan/checkout/3/" class="getPlusButton">
+        <button class="getPlusButton">
             <span class="material-symbols-outlined">
                 star_shine
             </span>
             Get Plus
-        </a>
+        </button>
     </header>
     <main>
         <section id="intro">
@@ -47,11 +47,13 @@
         </section>
 
         <section id="converter">
+            <form action="submit" method="get">
             <label for="ascii"></label>
 
             <textarea id="ascii" name="ascii" placeholder="Paste ASCII tabs here" rows="6" cols="33"></textarea>
 
-            <a href="#result" id="convertButton">Convert</a>
+            <button onclick="preventDefault()" id="convertButton">Convert</button>
+            </form>
         </section>
 
         <hr>
@@ -60,12 +62,12 @@
             <iframe src="https://www.soundslice.com/slices/C29bc/embed/" width="100%" height="250" frameBorder="0"
                 allowfullscreen></iframe>
 
-            <a href="#getPro" id="addToLibrary">
+            <button id="addToLibrary">
                 <span class="material-symbols-outlined">
                     bookmark_add
                 </span>
                 Save to library
-            </a>
+            </button>
         </section>
 
         <hr class="getPlus">
@@ -76,12 +78,12 @@
             <div class="marketing">
                 <span class="price">$5</span>
 
-                <a href="https://www.soundslice.com/settings/change-plan/checkout/3/" class="getPlusButton">
+                <button class="getPlusButton">
                     <span class="material-symbols-outlined">
                         star_shine
                     </span>
                     Get Plus
-                </a>
+                </button>
 
             </div>
             <div class="marketing">
