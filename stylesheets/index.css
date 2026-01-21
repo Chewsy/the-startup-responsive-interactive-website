@@ -141,11 +141,11 @@ textarea {
     }
 }
 
-iframe{
+iframe {
     opacity: 0;
 }
 
-   
+
 
 /* Z.S.M STYLEGUIDE VARIABELEN VAN MAKEN NA TESTEN*/
 
@@ -180,30 +180,47 @@ a {
         }
     }
 
-    #converter:has(textarea:not(:placeholder-shown)) & {
-        background-color: #f2725f;
 
-        animation-name:schudden ;
-        animation-duration: .1s;
-        animation-iteration-count:6;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-    }
 
+
+
+}
+
+#converter:has(textarea:not(:placeholder-shown)) a {
+    background-color: #f2725f;
+
+    animation-name: schudden;
+    animation-duration: .1s;
+    animation-iteration-count: 6;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#result:has(a.active) a {
+    background-color: #f2725f;
+
+    animation-name: schudden;
+    animation-duration: .1s;
+    animation-iteration-count: 6;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+main:has(#result a.active) #converter a {
+    background-color: #42434d;
 }
 
 @keyframes schudden {
     0% {
-        rotate:-2deg;
+        rotate: -2deg;
     }
+
     100% {
-        rotate:2deg;
+        rotate: 2deg;
     }
 }
 
-
-   
-    
 
 a:hover,
 input[type="submit"]:hover {
@@ -230,6 +247,10 @@ textarea:active {
 #result a {
     background-color: #42434d;
     width: 150px;
+
+    &.active {
+        background-color: #f2725f;
+    }
 }
 
 .material-symbols-outlined {
