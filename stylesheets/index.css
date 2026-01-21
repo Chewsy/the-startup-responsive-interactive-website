@@ -180,10 +180,6 @@ a {
         }
     }
 
-
-
-
-
 }
 
 #converter:has(textarea:not(:placeholder-shown)) a {
