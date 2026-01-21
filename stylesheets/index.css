@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mitr:wght@200;300;400;500;600;700&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+@font-face {
+    font-family: 'Freight-text-pro';
+    src: url('../assets/fonts/freight_text_pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-nova';
+    src: url('../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding-top: var(--whitespace-large);
@@ -14,7 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    font-family: "Zalando Sans", sans-serif;
+    font-family: "Proxima-nova", sans-serif;
     color: var(--text-color);
 
     @media (min-width: 1000px) {
@@ -23,6 +37,11 @@ body {
         background-size: cover;
         background-attachment: fixed;
     }
+}
+
+h1, h2, h3{
+    font-family: 'Freight-text-pro', serif;
+    font-weight: bold;
 }
 
 header {
