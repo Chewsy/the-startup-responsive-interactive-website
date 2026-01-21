@@ -39,7 +39,9 @@ body {
     }
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Freight-text-pro', serif;
     font-weight: bold;
 }
@@ -65,6 +67,9 @@ header {
 }
 
 header .price {
+    font-family: 'Freight-text-pro', serif;
+    font-weight: bold;
+
     @media (min-width: 1000px) {
         font-size: 25px;
     }
