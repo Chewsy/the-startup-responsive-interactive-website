@@ -140,12 +140,6 @@ textarea {
     }
 }
 
-iframe {
-    opacity: 0;
-}
-
-
-
 /* Z.S.M STYLEGUIDE VARIABELEN VAN MAKEN NA TESTEN*/
 
 .buttons {
@@ -209,11 +203,12 @@ button {
     animation-direction: alternate;
 }
 
-#result:has(button.active) button {
+#result:has(button) button {
     background-color: var(--button-color);
 
     animation-name: schudden;
     animation-duration: .1s;
+    animation-delay: 3s;
     animation-iteration-count: 6;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
@@ -256,6 +251,10 @@ textarea:active {
 }
 
 /* RESULT */
+
+#result{
+    display: none;
+}
 
 #result button {
     background-color: var(--text-disabled-button);

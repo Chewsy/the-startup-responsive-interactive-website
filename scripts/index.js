@@ -13,7 +13,6 @@ document.querySelector("#convertButton").addEventListener("click", function (eve
     if (asciiInput.value !== "") {
         // voorkomt submit functie
         event.preventDefault();
-        document.querySelector("#addToLibrary").classList.add("active");
-        document.querySelector("iframe").style.opacity = '100';
+        document.querySelector("#result").style.display= "block";
     }
 });
